@@ -1,44 +1,88 @@
-# Web-Tech-Scanner
+# 🔍 Technology Detector
 
-Web-Tech-Scanner is a Python-based tool that identifies the technologies used by a given website. It scrapes the website and matches the extracted data with a predefined technology dataset.
+A powerful Python-based tool that scrapes a given website and detects the technologies used on it! This tool utilizes web scraping and pattern matching to identify various technologies, frameworks, and libraries implemented in the site's HTML, scripts, and metadata.
 
-## Features
-- Extracts and identifies technologies such as JavaScript frameworks, CMS platforms, and analytics tools.
-- Uses a predefined dataset of technologies for accurate matching.
-- Supports scanning scripts, meta tags, and page content for technology detection.
-- Simple command-line interface for easy use.
+## 🚀 Features
+- Scrapes a website and analyzes its **HTML, meta tags, and scripts**
+- Matches technologies against a predefined dataset
+- Provides a **clean and accurate** list of detected technologies
+- Fast and efficient, using **BeautifulSoup** for parsing and **requests** for fetching data
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/Web-Tech-Scanner.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Web-Tech-Scanner
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 📌 Tags
+`Python` `Web Scraping` `Technology Detector` `BeautifulSoup` `Requests` `Automation`
 
-## Usage
-1. Run the script:
-   ```bash
-   python technolog.py
-   ```
-2. Enter the website URL when prompted.
+---
 
-## Example Output
+## 📥 Installation
+### Prerequisites
+Ensure you have **Python 3.x** installed along with the required libraries.
+
+```sh
+pip install pandas requests beautifulsoup4
+```
+
+### Clone the Repository
+```sh
+git clone https://github.com/yourusername/technology-detector.git
+cd technology-detector
+```
+
+---
+
+## ⚡ Usage
+Run the script and enter a website URL to analyze.
+
+```sh
+python technolog.py
+```
+
+### Example Output:
 ```
 Enter the website URL: https://example.com
 Formatted URL: example.com
-Technologies used in this website: jQuery, Google Analytics, Bootstrap
+Technologies used in this website: jQuery, Bootstrap, Google Analytics
 ```
 
-## Contributing
-Feel free to contribute by adding more technologies to the dataset or improving detection accuracy.
+---
 
-## License
-This project is licensed under the MIT License.
+## 🛠 How It Works
+1. **Loads Technology Data** 📂
+   - Fetches a dataset of web technologies from a JSON file.
+   - Converts the dataset into a structured **pandas DataFrame**.
+
+2. **Scrapes the Website** 🌐
+   - Uses `requests` to fetch the page source.
+   - Parses the HTML using `BeautifulSoup`.
+
+3. **Matches Technologies** 🔍
+   - Extracts **scripts, meta tags, and headers** from the website.
+   - Checks for predefined technology patterns.
+   - Returns a list of matched technologies.
+
+---
+
+---
+
+## 🌟 Future Enhancements
+✅ Add support for more technology datasets 🔧
+✅ Improve accuracy with **machine learning-based detection** 🤖
+✅ Build a **GUI or Web Interface** for ease of use 🖥️
+
+---
+
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to modify.
+
+---
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 📧 Contact
+Have questions or suggestions? Feel free to reach out!
+
+📩 Email: vipulsolanki339@gmail.com  
+🔗 GitHub: [VIPULbunny](https://github.com/VIPULbunny)
 
